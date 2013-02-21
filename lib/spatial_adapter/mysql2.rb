@@ -3,7 +3,7 @@ require 'spatial_adapter/base/mysql'
 require 'active_record/connection_adapters/mysql2_adapter'
 
 module ActiveRecord::ConnectionAdapters
-  class SpatialMysql2Column < Mysql2Column
+  class SpatialMysql2Column < Column
     include SpatialAdapter::SpatialColumn
     extend SpatialAdapter::Base::Mysql::SpatialColumn
   end
